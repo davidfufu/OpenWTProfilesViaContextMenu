@@ -5,3 +5,17 @@ Opens WT Profiles in the current directory using a context menu right click opti
 
 Known Issues:
 - Bash and WSL can't group their tabs in the same existing WT window as default profile, Powershell, and Command Line. Investigating this.
+
+
+## Installation
+
+Double click the "Add Context Menu Commands in Registry.reg" file and confirm.
+
+
+## Removal
+
+Double click the "Remove Context Menu Commands in Registry.reg" file and confirm.
+
+OR
+
+Go to HKEY_CLASSES_ROOT\directory\background\shell and HKEY_CLASSES_ROOT\directory\shell and delete the entries themselves.
