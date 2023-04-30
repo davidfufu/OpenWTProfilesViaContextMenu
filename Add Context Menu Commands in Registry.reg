@@ -1,0 +1,97 @@
+Windows Registry Editor Version 5.00
+
+; Directory
+
+[HKEY_CLASSES_ROOT\Directory\shell\WindowsTerminalAsAdmin]
+"HasLUAShield"=""
+"MUIVerb"="Open in Windows Terminal as Administrator"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\01defaultProfile]
+"MUIVerb"="Default Profile"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\01defaultProfile\command]
+@="powershell.exe -WindowStyle Hidden \"Set-Location -literalPath '%V';Start-Process -Verb RunAs wt.exe -ArgumentList @('-d','.')\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\02Cmd]
+"MUIVerb"=" Command Prompt"
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\02Cmd\command]
+@="powershell.exe -WindowStyle Hidden \"Set-Location -literalPath '%V';Start-Process -Verb RunAs wt.exe -ArgumentList @('-p','\"\"\"Command Prompt\"\"\"','-d','.')\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\03PS]
+"MUIVerb"="PowerShell"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\03PS\command]
+@="powershell.exe -WindowStyle Hidden \"Set-Location -literalPath '%V';Start-Process -Verb RunAs wt.exe -ArgumentList @('-p','\"\"\"Windows PowerShell\"\"\"','-d','.')\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\04Ubuntu]
+"MUIVerb"="WSL"
+"HasLUAShield"=""
+"Icon"="wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\04Ubuntu\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu-22.04\" -d \"%1\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\05Bash]
+"MUIVerb"="Bash"
+"HasLUAShield"=""
+"Icon"="git-bash.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Shell\WindowsTerminalAsAdmin\shell\05Bash\command]
+@="cmd.exe /c start wt.exe -p \"Git Bash\" -d \"%1\""
+
+; Directory\Background
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\WindowsTerminalAsAdmin]
+"HasLUAShield"=""
+"MUIVerb"="Open in Windows Terminal as Administrator"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\01defaultProfile]
+"MUIVerb"="Default Profile"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\01defaultProfile\command]
+@="powershell.exe -WindowStyle Hidden \"Set-Location -literalPath '%V';Start-Process -Verb RunAs wt.exe -ArgumentList @('-d','.')\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\02Cmd]
+"MUIVerb"="Command Prompt"
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\02Cmd\command]
+@="powershell.exe -WindowStyle Hidden \"Set-Location -literalPath '%V';Start-Process -Verb RunAs wt.exe -ArgumentList @('-p','\"\"\"Command Prompt\"\"\"','-d','.')\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\03PS]
+"MUIVerb"="PowerShell"
+"HasLUAShield"=""
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\03PS\command]
+@="powershell.exe -WindowStyle Hidden \"Set-Location -literalPath '%V';Start-Process -Verb RunAs wt.exe -ArgumentList @('-p','\"\"\"Windows PowerShell\"\"\"','-d','.')\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\04Ubuntu]
+"MUIVerb"="WSL"
+"Icon"="wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\04Ubuntu\command]
+@="cmd.exe /c start wt.exe -p \"Ubuntu-22.04\" -d \"%V\""
+
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\05Bash]
+"MUIVerb"="Bash"
+"Icon"="git-bash.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\Shell\WindowsTerminalAsAdmin\shell\05Bash\command]
+@="cmd.exe /c start wt.exe -p \"Git Bash\" -d \"%V\""
