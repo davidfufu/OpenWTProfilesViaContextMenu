@@ -19,3 +19,7 @@ Double click the "Remove Context Menu Commands in Registry.reg" file and confirm
 OR
 
 Go to HKEY_CLASSES_ROOT\directory\background\shell and HKEY_CLASSES_ROOT\directory\shell and delete the entries themselves.
+
+
+## TW Settings JSON
+I have provided WT settings json as reference.
