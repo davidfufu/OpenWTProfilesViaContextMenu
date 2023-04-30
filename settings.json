@@ -32,7 +32,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}",
-    "firstWindowPreference": "persistedWindowLayout",
+    "firstWindowPreference": "defaultProfile",
     "newTabMenu": 
     [
         {
@@ -41,19 +41,22 @@
     ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "elevate": true
+        },
         "list": 
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "elevate": false,
+                "elevate": true,
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "elevate": false,
+                "elevate": true,
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -65,7 +68,8 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "elevate": false,
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu-22.04",
+                "elevate": true,
                 "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
                 "hidden": false,
                 "name": "Ubuntu-22.04",
@@ -73,7 +77,7 @@
             },
             {
                 "colorScheme": "Solarized Dark",
-                "elevate": false,
+                "elevate": true,
                 "font": 
                 {
                     "face": "MesloLGS NF"
@@ -84,7 +88,7 @@
                 "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
             },
             {
-                "elevate": false,
+                "elevate": true,
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
